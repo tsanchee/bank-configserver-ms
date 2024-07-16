@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+management.endpoints.web:
+  include: '*'
+  
+spring:
+  application:
+    name: bank-configserver-ms
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/tonysanes/bank-dataserver
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
