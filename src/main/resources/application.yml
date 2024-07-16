@@ -11,7 +11,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/tonysanes/bank-dataserver
+          uri: https://github.com/tsanchee/bank-dataserver
 eureka:
   client:
     serviceUrl:
